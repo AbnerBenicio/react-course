@@ -1,22 +1,17 @@
 import './App.css';
-import HelloWorld from './components/HelloWorld';
+import SayMyName from './components/SayMyName';
+import People from './components/People';
 
 function App() {
 
-  const name = "Abner"
-
-  function soma (a, b) {
-    return a+b
-  }
-
-  const url = "https://via.placeholder.com/150"
+  const nome = "Maria"
 
   return (
     <div className="App">
-      <HelloWorld />
-      <h1>Olá, {name}</h1>
-      <p>Soma: {soma(2, 3)}</p>
-      <img src={url} alt='img aleatória'></img>
+      <SayMyName nome="Abner"/>
+      <SayMyName nome="João"/>
+      <SayMyName nome={nome}/>
+      <People name= "Abner" age= "20" job= "Estudante" img= "https://via.placeholder.com/150"/>
     </div>
   );
 }
