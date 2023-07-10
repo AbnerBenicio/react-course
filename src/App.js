@@ -1,4 +1,5 @@
 import './App.css';
+import HelloWorld from './components/HelloWorld';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <HelloWorld />
       <h1>Olá, {name}</h1>
       <p>Soma: {soma(2, 3)}</p>
       <img src={url} alt='img aleatória'></img>
