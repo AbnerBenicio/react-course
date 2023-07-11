@@ -1,0 +1,9 @@
+.frase {
+    background-color: brown;
+    border: 1px solid #000;
+}
+
+.frase.ativa {
+    background-color: blue;
+}
+
