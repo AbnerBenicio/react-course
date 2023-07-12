@@ -14,6 +14,7 @@ function App() {
       <Event numero={1}/>
       <Event numero={2}/>
       <Form />
+      <List />
       
     </div>
   );
