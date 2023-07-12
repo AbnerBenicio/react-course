@@ -5,17 +5,15 @@ function List() {
   let [val, setVal] = useState();
 
   const teste = (e) => {
-    if (e.key === "Enter") {
-      setVal(e.target.value)
-      if (e.target.value === "") {
-        setVal()
-      }
+    setVal(e.target.value);
+    if (e.target.value === "") {
+      setVal()
     }
   };
 
   return (
     <>
-      <input onKeyUp={teste} />
+      <input onChange={teste} />
       <h1>Minha Lista</h1>
       <ul>
         <Item marca="toyota" ano_lancamento={1985} />
