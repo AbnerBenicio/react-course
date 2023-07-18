@@ -1,3 +1,5 @@
+import Button from "./Button"
+
 function Event (props) {
     
     const meuEvento = () => {
@@ -7,6 +9,7 @@ function Event (props) {
     return (
         <div>
             <p>Disparar um evento</p>
+            <Button text="Primeiro evento"/>
             <button onClick={meuEvento}>ATIVAR</button>
         </div>
     )

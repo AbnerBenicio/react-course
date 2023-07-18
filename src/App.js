@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       <h1>Testando eventos</h1>
       <Event numero={1}/>
-      <Event numero={2}/>
       <Form />
       <List />
       
