@@ -3,14 +3,18 @@ import Button from "./Button"
 function Event (props) {
     
     const meuEvento = () => {
-        console.log(`O número ${props.numero} foi ativado`)
+        console.log("ATIVANDO PRIMEIRO EVENTO")
+    }
+
+    const segundoEvento = () => {
+        console.log("Salve")
     }
     
     return (
         <div>
             <p>Disparar um evento</p>
-            <Button text="Primeiro evento"/>
-            <button onClick={meuEvento}>ATIVAR</button>
+            <Button event={meuEvento} text="Primeiro evento"/>
+            <Button event={segundoEvento} text="Segundo evento"/>
         </div>
     )
 }
